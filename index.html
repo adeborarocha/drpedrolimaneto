@@ -716,11 +716,14 @@ src="https://www.facebook.com/tr?id=1518788156711668&ev=PageView&noscript=1"
                                       `📱 *WhatsApp:* ${encodeURIComponent(phoneVal)}%0A` +
                                       `🎓 *Nível:* ${encodeURIComponent(expVal)}%0A%0A` +
                                       `_Olá Dr. Pedro Lima! Gostaria de verificar a disponibilidade de vagas e agendar minha matrícula na Imersão de Implantes Zigomáticos em Cianorte._`;
-
+            fbq('track', 'Lead');
             setTimeout(() => {
                 window.open(`https://api.whatsapp.com/send?phone=${DESTINATION_PHONE}&text=${formattedMessage}`, '_blank');
             }, 1800);
         }
     </script>
+});
+</script>
+    
 </body>
 </html>
